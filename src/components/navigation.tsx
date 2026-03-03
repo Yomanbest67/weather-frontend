@@ -1,4 +1,6 @@
 import React from 'react';
+import '../styles/navigation.css';
+import '../bootstrap/js/bootstrap.bundle.js';
 import { Link } from 'react-router-dom'; // If using React Router
 
 const Navbar: React.FC = () => {
@@ -10,11 +12,11 @@ const Navbar: React.FC = () => {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div className="navbar-nav ms-auto">
-                    <Link className="nav-link active" aria-current="page" to="#">Home</Link>
-                    <Link className="nav-link" to="#">Features</Link>
-                    <Link className="nav-link" to="#">Pricing</Link>
-                </div>
+                    <div className="navbar-nav ms-auto">
+                        <Link className="nav-link active" aria-current="page" to="#">Home</Link>
+                        <Link className="nav-link" to="#">Features</Link>
+                        <Link className="nav-link" to="#">Pricing</Link>
+                    </div>
                 </div>
             </div>
         </nav>
